@@ -18,3 +18,7 @@ Database - MySql <br>
 ## Services Architecture Design
 
 <img src="./Services.svg"/>
+
+## UI Design 
+
+https://www.figma.com/file/WzCkpYzcvtJOxJM1lEhlX1/Home?node-id=0%3A1
