@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-service
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/use-regex: "true"
+spec:
+  rules:
+    - host: rfo.dev
+      http:
+        paths:
+          - path: /api/query/?(.*)
+            backend:
+              serviceName: query-srv
+              servicePort: 4545
+          - path: /api/post/?(.*)
+            backend:
+              serviceName: post-srv
+              servicePort: 3535
+          - path: /
+            backend:
+              serviceName: client-srv
+              servicePort: 3000
