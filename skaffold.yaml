@@ -14,7 +14,7 @@ build:
         dockerfile: Dockerfile
       sync:
         manual:
-          - src: "src/**/*.js"
+          - src: "src/**/*"
             dest: .
     - image: pizzabook/query
       context: query

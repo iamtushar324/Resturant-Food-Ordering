@@ -2,7 +2,7 @@ const app = require("express")();
 const mongoose = require("mongoose");
 
 app.get("/api/query", (req, res) => {
-  res.send("hii");
+  res.send("hii my ");
 });
 
 app.listen(4545, () => {
