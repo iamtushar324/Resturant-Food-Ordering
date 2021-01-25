@@ -1,0 +1,16 @@
+.btn {
+  padding: 7px 12px;
+  font-weight:bold;
+  border-radius:10px;
+  outline:none;
+  border:none;
+  cursor: pointer;
+  box-shadow:1px 1px 5px #222;
+  transition:0.2s;
+  background-color:$primary-color;
+  color:$text-color;
+
+}
+.btn:active{
+  box-shadow:none;
+}

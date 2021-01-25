@@ -1,0 +1,15 @@
+@import "./baseStyles.scss";
+@import "base/base.scss";
+
+.login {
+  @import "pages/Login.scss";
+}
+.register {
+  @import "pages/Register.scss";
+}
+.input {
+  @import "components/Input.scss";
+}
+.button {
+  @import "components/Button.scss";
+}

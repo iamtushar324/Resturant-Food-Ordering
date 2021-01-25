@@ -1,10 +1,10 @@
-import Home from "pages/Home";
+import Route from "routes";
 import { baseStyles } from "styles/baseStyles";
 
 function App() {
   return (
     <div style={main} className="App">
-      <Home />
+      <Route />
     </div>
   );
 }

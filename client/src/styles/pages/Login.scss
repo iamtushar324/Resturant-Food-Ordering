@@ -1,0 +1,45 @@
+.wrapper-box {
+  height: 300px;
+  width: 400px;
+  background-color: $background-color-light;
+  margin: auto;
+  margin-top: 10vh;
+  border-radius: 30px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.title {
+  font-size: 24px;
+  font-family: "Gill Sans", sans-serif;
+  display: inline;
+}
+
+.new-user {
+  font-size: 12px;
+}
+
+.register-link {
+  color: skyblue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.back-btn{
+  height: 30px;
+  position: absolute;
+  top:30px;
+  left:30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 505px) {
+  .wrapper-box {
+    background-color: black;
+    width: 100vw;
+  }
+}
