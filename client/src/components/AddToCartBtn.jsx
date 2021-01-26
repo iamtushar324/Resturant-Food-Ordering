@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { baseStyles } from "styles/baseStyles";
 
-export default function AddToCart({ state = 0, action }) {
+export default function AddToCart({ state = 0, action,className="" , ...props }) {
   const [value, setValue] = useState(state);
 
   const add = (e) => {
@@ -11,15 +11,17 @@ export default function AddToCart({ state = 0, action }) {
     setValue(value - 1);
   };
 
+className = "no-select " + className
+
   if (value == 0)
     return (
-      <div className="no-select" onClick={add} style={btnWrapper}>
+      <div className={className} {...props} onClick={add} style={btnWrapper}>
         Add &nbsp; +
       </div>
     );
   else
     return (
-      <div className="no-select" style={counterWrapper}>
+      <div className={className} {...props} style={counterWrapper}>
         <span style={smallBtnL} onClick={remove}>
           -
         </span>
@@ -49,8 +51,8 @@ const counterWrapper = {
   color: baseStyles.backgroundColor,
 };
 const smallBtnL = {
-  padding: "0 15px 0 0",
+  padding: "50px 15px 50px 0px",
 };
 const smallBtnR = {
-  padding: "0 0 0 15px",
+  padding: "50px 0 50px 15px",
 };

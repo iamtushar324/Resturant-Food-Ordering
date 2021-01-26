@@ -13,3 +13,12 @@
 .button {
   @import "components/Button.scss";
 }
+.cart {
+  @import "pages/Cart.scss";
+}
+.cart-item-box{
+  @import "containers/CartItemBox.scss"
+}
+
+  @import "containers/SummaryBox.scss";
+

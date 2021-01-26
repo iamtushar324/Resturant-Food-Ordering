@@ -1,0 +1,28 @@
+.title {
+  margin-top: 80px;
+  margin-left:40px;
+  margin-bottom:0px;
+
+}
+.cart-wrapper{
+  display:flex;
+  flex-direction:row;
+
+}
+.item-list{
+  width:70vw;
+
+}
+
+
+@media screen and (max-width: 505px) {
+  .cart-wrapper{
+    display:flex;
+    flex-direction:column;
+
+  }
+  .item-list{
+    width:100vw;
+
+  }
+}
