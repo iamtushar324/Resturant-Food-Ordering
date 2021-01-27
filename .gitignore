@@ -3,5 +3,6 @@
 .env
 .eslintcache
 .DS_Store
+client/.eslintcachek
 
 
