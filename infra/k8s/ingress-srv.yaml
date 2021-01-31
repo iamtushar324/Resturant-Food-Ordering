@@ -18,6 +18,10 @@ spec:
             backend:
               serviceName: post-srv
               servicePort: 3535
+          - path: /api/auth/?(.*)
+            backend:
+              serviceName: auth-srv
+              servicePort: 3333
           - path: /
             backend:
               serviceName: client-srv

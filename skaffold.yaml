@@ -8,14 +8,6 @@ build:
   local:
     push: false
   artifacts:
-    - image: pizzabook/client
-      context: client
-      docker:
-        dockerfile: Dockerfile
-      sync:
-        manual:
-          - src: "src/**/*"
-            dest: .
     - image: pizzabook/query
       context: query
       docker:
@@ -26,6 +18,14 @@ build:
             dest: .
     - image: pizzabook/post
       context: post
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: "*.js"
+            dest: .
+    - image: pizzabook/auth
+      context: auth
       docker:
         dockerfile: Dockerfile
       sync:
