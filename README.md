@@ -17,7 +17,7 @@ Database - MySql <br>
 
 ## Services Architecture Design
 
-<img src="./Services.svg"/>
+<img src="./docs/Services.svg"/>
 
 ## UI Design
 
